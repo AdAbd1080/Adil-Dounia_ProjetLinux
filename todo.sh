@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Bienvenue Bienvenue ;)"
+echo "Bienvenue Bienvenue. Voici le projet d'Adil et Dounia ;)"
 
 while true; do
     
@@ -18,7 +18,7 @@ while true; do
             echo "Tâche ajoutée : $nouvelle_tache" 
             ;;
         2)
-            if [ -s "tasks.txt" ]; then
+            if [ -s "tasks.txt" ]; then # vérifie si le fichier "tasks.txt" existe 
                 echo -e "\nListe des tâches :"
                 cat -n tasks.txt
                 read -p "Entrez le numéro de la tâche à supprimer : " numero_tache
@@ -42,7 +42,7 @@ while true; do
             fi
             ;;
         4)
-            echo "Merci d'avoir utilisé le gestionnaire de tâches. Au revoir !"
+            echo "Bye Bye. Pas merci a vous !"
             break
             ;;
             *)
