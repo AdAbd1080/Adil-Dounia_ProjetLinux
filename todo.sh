@@ -30,7 +30,7 @@ while true; do
                 #Cette condition vérifie si numero_tache est un nombre entier supérieur ou égal à 1 et inférieur ou
                 #égal au nombre de lignes dans le fichier"tasks.txt". 
                    
-                    tache_a_supprimer=$        (sed -n "${numero_tache}p" tasks.txt)
+                    tache_a_supprimer=$(sed -n "${numero_tache}p" tasks.txt)
                     #Si la condition précédente est vraie, cette ligne utilise la commande sed pour extraire 
                     #la tâche correspondante à partir de "tasks.txt" et la stocke dans la variable tache_a_supprimer.
                     
