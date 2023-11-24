@@ -46,7 +46,7 @@ while true; do
             break
             ;;
             *)
-            echo "Choix invalide. Veuillez entrer un numéro valide."
+            echo "Choix invalide. Veuillez entrer un numéro valide pour que cela fonctionne enfin."
             ;;
     esac
 done
