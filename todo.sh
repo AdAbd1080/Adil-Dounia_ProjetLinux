@@ -11,4 +11,8 @@ while true; do
 
     read -p "Entrez le numéro de votre choix : " choix
 
-    
+    case $choix in
+        1)
+            read -p "Entrez la description de la nouvelle tâche : " nouvelle_tache
+            echo "$nouvelle_tache" >> tasks.txt
+            echo "Tâche ajoutée : $nouvelle_tache"
