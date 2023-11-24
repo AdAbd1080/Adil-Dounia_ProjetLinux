@@ -45,3 +45,8 @@ while true; do
             echo "Merci d'avoir utilisé le gestionnaire de tâches. Au revoir !"
             break
             ;;
+            *)
+            echo "Choix invalide. Veuillez entrer un numéro valide."
+            ;;
+    esac
+done
