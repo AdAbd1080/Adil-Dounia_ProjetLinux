@@ -33,7 +33,7 @@ while true; do
                     tache_a_supprimer=$        (sed -n "${numero_tache}p" tasks.txt)
                     #Si la condition précédente est vraie, cette ligne utilise la commande sed pour extraire 
                     #la tâche correspondante à partir de "tasks.txt" et la stocke dans la variable tache_a_supprimer.
-                    .
+                    
                     
                     sed -i "${numero_tache}d" tasks.txt
                     #Cette ligne utilise la commande sed avec l'option -i pour effectuer une suppression de la ligne 
