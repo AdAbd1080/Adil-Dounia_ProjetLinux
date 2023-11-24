@@ -13,7 +13,7 @@ while true; do
 
     case $choix in
         1)
-            read -p "Entre la description de la nouvelle tâche : " nouvelle_tache
+            read -p "Ecrivez la nouvelle tâche que vous voulez ajouter : " nouvelle_tache
             echo "$nouvelle_tache" >> tasks.txt
             echo "Tâche ajoutée : $nouvelle_tache" 
             ;;
