@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Bienvenue dans le gestionnaire de tâches !"
+echo "Bienvenue Bienvenue. Voici le projet d'Adil et Dounia ;)"
 
 while true; do
     
@@ -9,16 +9,16 @@ while true; do
     echo "3. Afficher les tâches"
     echo "4. Quitter"
 
-    read -p "Entrez le numéro de votre choix : " choix
+    read -p "Entre le numéro que tu veux : " choix
 
     case $choix in
         1)
-            read -p "Entrez la description de la nouvelle tâche : " nouvelle_tache
+            read -p "Entre la description de la nouvelle tâche : " nouvelle_tache
             echo "$nouvelle_tache" >> tasks.txt
-            echo "Tâche ajoutée : $nouvelle_tache"
+            echo "Tâche ajoutée : $nouvelle_tache" 
             ;;
         2)
-            if [ -s "tasks.txt" ]; then
+            if [ -s "tasks.txt" ]; then # vérifie si le fichier "tasks.txt" existe 
                 echo -e "\nListe des tâches :"
                 cat -n tasks.txt
                 read -p "Entrez le numéro de la tâche à supprimer : " numero_tache
@@ -42,10 +42,10 @@ while true; do
             fi
             ;;
         4)
-            echo "Merci d'avoir utilisé le gestionnaire de tâches. Au revoir !"
+            echo "Bye Bye. Pas merci a vous !"
             break
             ;;
-        *)
+            *)
             echo "Choix invalide. Veuillez entrer un numéro valide."
             ;;
     esac
