@@ -33,3 +33,11 @@ while true; do
                 echo "Aucune tâche enregistrée."
             fi
             ;;
+            3)
+            if [ -s "tasks.txt" ]; then
+                echo -e "\nListe des tâches :"
+                cat -n tasks.txt
+            else
+                echo "Aucune tâche enregistrée."
+            fi
+            ;;
