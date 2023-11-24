@@ -3,7 +3,7 @@
 echo "Bienvenue dans le gestionnaire de tâches !"
 
 while true; do
-    echo -e "\nQue souhaitez-vous faire ?"
+    
     echo "1. Ajouter une tâche"
     echo "2. Supprimer une tâche"
     echo "3. Afficher les tâches"
